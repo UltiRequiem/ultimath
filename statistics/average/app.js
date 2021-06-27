@@ -7,5 +7,5 @@ const strToArr = (str) => str.split(',');
 const propertyToInt = (array) => array.map(Number);
 
 const printAverage = () => {
-  ANSWER.textContent = getAverage(propertyToInt(strToArr(NUMBERS.value)));
+  ANSWER.textContent = Math.round(getAverage(propertyToInt(strToArr(NUMBERS.value))));
 };
