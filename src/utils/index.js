@@ -1,3 +1,3 @@
-import getAverage from "./average";
+import getAverage from './average';
 
 export { getAverage };
