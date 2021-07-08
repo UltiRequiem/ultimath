@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Easily calculate common problems of daily life.",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "npx webpack",
+    "start": "npx webpack serve --config webpack.config.dev.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UltiRequiem/ultimath.git"
