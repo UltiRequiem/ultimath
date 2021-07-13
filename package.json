@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npx webpack",
+    "netlify": "npx webpack && echo '/* /index.html 200' >> build/_redirects",
     "start": "npx webpack serve --config webpack.config.dev.js"
   },
   "repository": {
