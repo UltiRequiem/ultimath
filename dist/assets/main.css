@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+body{margin:0;padding:0;font-family:"Muli",sans-serif;background:#ebedef}*{box-sizing:border-box}::-webkit-scrollbar{display:none}
+
+.header{display:flex}.header__img{width:100px}
+
+.footer{align-items:center;display:flex;height:100px;width:100%}.footer a{cursor:pointer;font-size:14px;padding-left:30px;text-decoration:none}.footer a:hover{text-decoration:underline}
+
