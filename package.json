@@ -4,7 +4,7 @@
   "description": "Easily calculate common problems of daily life.",
   "main": "src/index.js",
   "scripts": {
-    "build": "npx webpack",
+    "build": "npx webpack && echo '/* /index.html 200' | cat >build/_redirects ",
     "netlify": "npx webpack && echo '/* /index.html 200' >> build/_redirects",
     "start": "npx webpack serve --config webpack.config.dev.js"
   },
