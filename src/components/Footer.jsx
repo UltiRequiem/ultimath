@@ -8,7 +8,7 @@ const Footer = () => (
       License
     </a>
     <a href="https://github.com/UltiRequiem/ultimath">GitHub Proyect</a>
-    <a href="https://github.com/UltiRequiem"> Made whit ❤️ by UltiRequiem</a>
+    <a href="https://github.com/UltiRequiem"> Made by UltiRequiem</a>
   </footer>
 );
 
