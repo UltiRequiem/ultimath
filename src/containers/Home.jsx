@@ -1,9 +1,9 @@
 // React Stuff
-import React from 'react';
+import React from 'react'
 
 // Proyect Styles
-import '../assets/styles/App.scss';
+import '../assets/styles/App.scss'
 
-const App = () => <h1>Math</h1>;
+const App = () => <h1>Math</h1>
 
-export default App;
+export default App

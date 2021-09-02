@@ -1,3 +1,3 @@
 function getMode() {}
 
-export default getMode;
+export default getMode

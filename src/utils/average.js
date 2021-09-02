@@ -5,7 +5,7 @@
  * @returns Number
  */
 function getAverage(array) {
-  return array.reduce((a, b) => a + b) / array.length;
+  return array.reduce((a, b) => a + b) / array.length
 }
 
-export default getAverage;
+export default getAverage

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import '../assets/styles/components/NotFound.scss';
+import '../assets/styles/components/NotFound.scss'
 
 const Footer = () => (
   <footer className="footer">
@@ -10,6 +10,6 @@ const Footer = () => (
     <a href="https://github.com/UltiRequiem/ultimath">GitHub Proyect</a>
     <a href="https://github.com/UltiRequiem"> Made by UltiRequiem</a>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

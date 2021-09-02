@@ -1,4 +1,4 @@
-import getAverage from './average';
+import getAverage from './average'
 import getMode from './mode'
 
-export { getAverage,getMode };
+export { getAverage, getMode }

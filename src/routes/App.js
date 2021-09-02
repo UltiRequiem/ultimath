@@ -1,10 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Layout from '../components/Layout';
+import Layout from '../components/Layout'
 
-import Home from '../containers/Home';
-import NotFound from '../containers/NotFound';
+import Home from '../containers/Home'
+import NotFound from '../containers/NotFound'
 
 const App = () => (
   <Router basename="">
@@ -15,6 +15,6 @@ const App = () => (
       </Switch>
     </Layout>
   </Router>
-);
+)
 
-export default App;
+export default App
