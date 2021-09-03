@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './routes/App'
 
-const ROOT = document.getElementById('root')
+import { Main } from '@pages'
 
-ReactDOM.render(<App />, ROOT)
+ReactDOM.render(<Main />, document.getElementById('root'))

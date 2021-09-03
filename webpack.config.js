@@ -1,26 +1,28 @@
-const { join, resolve } = require('path')
+const path = require('path')
+
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 /** @param {string} dir */
-const joiner = (dir) => join(__dirname, dir)
+const joiner = (dir) => path.join(__dirname, dir)
 /** @param {string} dir */
-const resolver = (dir) => resolve(__dirname, dir)
+const resolver = (dir) => path.resolve(__dirname, dir)
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: './src/index.js',
   output: {
     path: resolver('dist'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   mode: 'production',
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js'],
     alias: {
-      '@styles': joiner('src/assets/styles/'),
-      '@components': joiner('src/components/'),
-    },
+      '@pages': joiner('src/pages/'),
+      '@utils': joiner('src/utils/'),
+      '@components': joiner('src/components/')
+    }
   },
   module: {
     rules: [
@@ -28,23 +30,23 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
+          loader: 'babel-loader'
+        }
       },
 
       {
         test: /\.html$/,
-        use: [{ loader: 'html-loader' }],
+        use: [{ loader: 'html-loader' }]
       },
       {
         test: /\.(s*)css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader
           },
           'css-loader',
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|gif|jpg)$/,
@@ -52,20 +54,20 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/[hash].[ext]',
-            },
-          },
-        ],
-      },
-    ],
+              name: 'assets/[hash].[ext]'
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
-    }),
-  ],
+      filename: 'assets/[name].css'
+    })
+  ]
 }
