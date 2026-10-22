@@ -10,14 +10,14 @@ making user interfaces so the appearance of the page does not look pretty
 and it is not easy to use.
 
 At this moment I am trying to become as familiar as possible with the world of
-the web development, probably in a couple of months I will resume this project
+web development, probably in a couple of months I will resume this project
 with more knowledge of UI, UX and CSS.
 
 ## Features
 
 - All runs in the Client Side
 
-- The calcs are shareable between user by the url
+- The calcs are shareable between users by the url
 
 ### License
 
